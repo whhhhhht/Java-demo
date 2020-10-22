@@ -1,0 +1,12 @@
+#include<stdio.h>
+int main()
+{
+	int s,h,n=0;
+	for(s=10;s<100;s++)
+		for(h=10;h<100;h++)
+		{
+			if(s==2*(h%10+h/10)&&h==3*(s%10+s/10))
+				n++;	
+		}
+	printf("%d",n); 
+ }
